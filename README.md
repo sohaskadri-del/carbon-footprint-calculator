@@ -10,7 +10,7 @@ The calculator provides a detailed emission breakdown and categorizes the total 
 
 🚀 Live Demo
 
-https://your-username.github.io/carbon-footprint-calculator/
+ https://sohaskadri-del.github.io/carbon-footprint-calculator/
 
 🛠 Tech Stack
 HTML
