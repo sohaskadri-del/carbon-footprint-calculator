@@ -21,6 +21,19 @@ document.getElementById("calculate").addEventListener("click", function() {
 
     let total = electricityCO2 + flightsCO2 + transportFactor;
 
-    document.getElementById("result").textContent =
-        "Estimated Annual Carbon Footprint: " + total.toFixed(2) + " kg CO2";
+    document.getElementById("result").innerHTML =
+        "Electricity: " + electricityCO2.toFixed(2) + " kg CO2<br>" +
+        "Flights: " + flightsCO2.toFixed(2) + " kg CO2<br>" +
+        "Transport: " + transportFactor + " kg CO2<br><br>" +
+        "<strong>Total Annual Footprint: " + total.toFixed(2) + " kg CO2</strong>";
+
+    let category = "";
+
+    if (total < 2000) category = "Low footprint";
+    else if (total < 5000) category = "Moderate footprint";
+    else category = "High footprint";
+
+    document.getElementById("result").innerHTML += 
+        "<br><br>Category: " + category;
+
 });
